@@ -3,7 +3,7 @@
 return [
     // The database table name
     // You can change this if the database keys get too long for your driver
-    'table_name' => 'authentication_log',
+    'table_name' => 'authentication_logs',
 
     // The database connection where the authentication_log table resides. Leave empty to use the default
     'db_connection' => null,
@@ -19,7 +19,7 @@ return [
     'notifications' => [
         'new-device' => [
             // Send the NewDevice notification
-            'enabled' => env('NEW_DEVICE_NOTIFICATION', true),
+            'enabled' => env('NEW_DEVICE_NOTIFICATION', false),
 
             // Use torann/geoip to attempt to get a location
             'location' => true,
